@@ -30,7 +30,7 @@ export default function SinglePageApp() {
             <a
               key={route.to}
               onClick={() => setActiveTab(route.to.slice(1) as Tab)}
-              className={`flex gap-2 text-left px-4 py-2.5 rounded-lg transition font-medium ${
+              className={`flex gap-2 text-left px-4 py-2.5 rounded-lg transition font-medium cursor-pointer ${
                 activeTab === route.to.slice(1)
                   ? 'bg-(--theme-color) text-(--primary-color) dark:text-(--secondary-color) shadow-md'
                   : 'text-(--secondary-color) hover:bg-(--primary-color) hover:text-(--theme-color)'
